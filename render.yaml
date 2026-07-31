@@ -1,0 +1,17 @@
+# services/render.yaml — para importar desde Render con "Blueprint"
+services:
+  - type: web
+    name: keo-rpg-data-broker
+    env: python
+    repo: https://github.com/Fxc-ndo03/keo-rpg-dashboard
+    branch: main
+    rootDir: .
+    buildCommand: pip install -r requirements_render.txt
+    startCommand: gunicorn server:app --bind 0.0.0.0:$PORT --workers 1 --threads 4
+    plan: free
+    autoDeploy: yes
+    envVars:
+      - key: AGENT_SECRET_TOKEN
+        value: keo2026-minecraft-servidor-secreto-123
+      - key: MAX_HISTORY
+        value: "1000"

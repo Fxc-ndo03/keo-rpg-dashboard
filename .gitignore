@@ -1,0 +1,41 @@
+# ============================================================
+#  .gitignore - KEO RPG (carpeta DEL SERVIDOR, para Git)
+#  NUNCA subas estas cosas a GitHub. Protege tu privacidad.
+# ============================================================
+
+# ---- Tokens y configuracion LOCAL ----
+web_public/agent_config.py
+mc_monitor/.secrets.toml
+
+# ---- Logs (siempre son locales, contienen info privada) ----
+*.log
+logs/
+mc_monitor/streamlit.log
+web_public/agent_local.log
+_server_startup.log
+
+# ---- Entornos virtuales Python ----
+mc_monitor/.venv/
+.venv/
+venv/
+
+# ---- Cache Python ----
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# ---- Archivos temporales / sistema ----
+Thumbs.db
+.DS_Store
+*.tmp
+*.bak
+
+# ---- Estado local del monitor ----
+mc_monitor/_monitor_state.json
+
+# ---- No subas el mundo completo ni backups a GitHub! (son gigantes) ----
+# world/
+# world_nether/
+# world_the_end/
+# *.zip

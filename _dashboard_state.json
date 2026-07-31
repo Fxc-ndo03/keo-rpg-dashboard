@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "msg": "ok",
+  "ts": 1785496830,
+  "ts_float": 1785496830.951,
+  "last_push_ts": 1785496830.951316,
+  "last_payload": {
+    "tps": 20.0,
+    "players": 0,
+    "player_list": "",
+    "uptime": "0h03m04s",
+    "alerts": 0,
+    "last_msg": "",
+    "cpu_pct": 28.5,
+    "ram_gb": 0.0,
+    "java_pid": null,
+    "java_found": false,
+    "cpu": 28.5,
+    "mc_up": "0h03m04s"
+  },
+  "api_push_total": 19,
+  "hist_n": 19
+}
